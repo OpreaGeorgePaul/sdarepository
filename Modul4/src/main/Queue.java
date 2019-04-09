@@ -5,7 +5,7 @@ public class Queue {
     private int head = 0;
 
 
-    void queue(int val) {
+    void queue1(int val) {
         if (tail == MAX_SIZE - 1) {
             return;
         }
@@ -16,8 +16,8 @@ public class Queue {
     }
 
     int dequeue() {
-        if (head < tail) {
-            System.out.println("No more elements.");
+        if (head > tail) {
+            System.out.println();
         }
         int val = queue[head];
         head = head + 1;
